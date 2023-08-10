@@ -5,7 +5,7 @@ pipeline {
         stage('build'){
             when {
                 expression {
-                  BRANCH_NAME == 'main' && CODE_CHANGE == false
+                  BRANCH_NAME == 'main' && CODE_CHANGE == true
                 }
             }
             steps {
